@@ -1,5 +1,5 @@
 # Learning-JS-Data-Structures-and-Algorithms
-[이 책](https://www.packtpub.com/support/code-downloads)을 통해 공부한 JS 자료구조 및 알고리즘을 기록하고 있습니다.   
+[이 책](https://www.packtpub.com/product/learning-javascript-data-structures-and-algorithms/9781783554874)을 통해 공부한 JS 자료구조 및 알고리즘을 기록하고 있습니다.   
 
 <br />
 
