@@ -116,7 +116,7 @@ book.printTitle();
   
 1. 함수 자신과 연결된 prototype 객체를 동시에 생성
   
-2. 이 둘은 각각 prototype과 constructor라는 프로퍼티로 서로를 참조한다.|
+2. 이 둘은 각각 prototype과 constructor라는 프로퍼티로 서로를 참조한다.
 
 </div>
 </details>
