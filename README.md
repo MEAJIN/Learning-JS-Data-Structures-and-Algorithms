@@ -106,7 +106,7 @@ book.printTitle();
 |설명|
 |--|
 |함수가 생성될 때 만들어지며, 단지 생성자(constructor) 프로퍼티 하나만 있는 객체를 가리킨다.
-|그리고 prototype 프로퍼티가 가리키는 prototype 객체의 유일한 constructor 프로퍼티는 자신과 연결된 함수를 가리킨다.|
+|prototype 프로퍼티가 가리키는 prototype 객체의 유일한 constructor 프로퍼티는 자신과 연결된 함수를 가리킨다.|
   
 <br />
 
