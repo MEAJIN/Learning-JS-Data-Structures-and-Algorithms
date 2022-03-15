@@ -106,8 +106,17 @@ book.printTitle();
 |설명|
 |--|
 |함수가 생성될 때 만들어지며, 단지 생성자(constructor) 프로퍼티 하나만 있는 객체를 가리킨다.
-|그리고 prototype 프로퍼티가 가리키는 포로토타입 객체의 유일한 constructor 프로퍼티는 자신과 연결된 함수를 가리킨다.|
-|즉, 함수를 생성할 때, 함수 자신과 연결된 프로토타입 객체를 동시에 생성하며, 이 둘은 각각 prototype과 constructor라는 프로퍼티로 서로를 참조한다.|
+|그리고 prototype 프로퍼티가 가리키는 prototype 객체의 유일한 constructor 프로퍼티는 자신과 연결된 함수를 가리킨다.|
+  
+<br />
+
+정리하자면
+
+함수를 생성할 때,
+  
+1. 함수 자신과 연결된 prototype 객체를 동시에 생성
+  
+2. 이 둘은 각각 prototype과 constructor라는 프로퍼티로 서로를 참조한다.|
 
 </div>
 </details>
