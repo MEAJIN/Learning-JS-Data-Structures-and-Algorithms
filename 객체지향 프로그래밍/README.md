@@ -1,15 +1,7 @@
-# Learning-JS-Data-Structures-and-Algorithms
-[이 책](https://www.packtpub.com/product/learning-javascript-data-structures-and-algorithms/9781783554874)을 통해 공부한 JS 자료구조 및 알고리즘을 기록하고 있습니다.   
-
-<br />
-
 ## 목차
 
 - Ch.1 자바스크립트 개요
   - 객체지향 프로그래밍
-
-- Ch.2 배열
-  - 배열의 생성과 초기화
 
 <br />
 
