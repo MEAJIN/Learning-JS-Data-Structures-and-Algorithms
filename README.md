@@ -10,6 +10,6 @@
 
 - [Ch.2 배열](https://github.com/MEAJIN/Learning-JS-Data-Structures-and-Algorithms/tree/main/%EB%B0%B0%EC%97%B4)
   - 배열의 생성과 초기화
-
+  - 원소 추가와 삭제
 
 
