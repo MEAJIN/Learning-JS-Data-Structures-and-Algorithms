@@ -38,7 +38,7 @@
 
 <br />
 
-> ### 배열의 생성과 초기화
+### 배열의 생성과 초기화
 
 자바스크립트 배열은 아주 쉽게 선언, 생성, 초기화할 수 있다.
 
@@ -153,7 +153,7 @@ for(var i=3; i<fibonacci.length; i++) { // {5}
   
 <br />
 
-> ### 원소 추가와 삭제
+### 원소 추가와 삭제
 
 배열의 원소 추가/삭제는 조금 까다롭다.
 
@@ -342,6 +342,136 @@ numbers.splice(5, 3);
 
 <br />
 
+### 2차원과 다차원 배열
+
+2일동안 측정한 온도가 있다고 해보자.
+
+<br />
+
+아래 코드를 보고 어떤 생각이 드는가?
+
+이 코드는 별로 좋지 못한 코드이다.
+
+코드를 더 나은 코드로 바꾸기 위해선 어떤 방법이 있을까?
+
+```js
+var averageTempDay1 = [72, 75, 79, 79, 81, 81];
+var averageTempDay2 = [81, 79, 75, 75, 73, 72];
+```
+
+<br />
+
+바로 행렬(2차원 배열)을 사용하는 방법이다.
+
+2차원 배열을 사용하면 행에 날짜를, 열에 매 시간 측정 온도를 각각 저장할 수 있다.
+
+```js
+var averageTemp = [];
+averageTemp[0] = [72, 75, 79, 79, 81, 81];
+averageTemp[1] = [81, 79, 75, 75, 73, 72];
+```
+
+<br />
+
+자바스크립트는 1차원 배열만 지원할 뿐 행렬 기능은 따로 없다.
+
+하지만 배열의 배열이라는 관점에서 본다면
+
+행렬이나 다차원 배열을 구현하는데 문제가 없다.
+
+위의 코드를 다음과 같이 바꿔쓸 수 있다.
+
+```js
+// 1일째
+averageTemp[0] = []; // 값을 초기화
+averageTemp[0][0] = 72;
+averageTemp[0][1] = 75;
+averageTemp[0][2] = 79;
+averageTemp[0][3] = 79;
+averageTemp[0][4] = 81;
+averageTemp[0][5] = 81;
+
+// 2일째
+averageTemp[1] = []; // 값을 초기화
+averageTemp[1][0] = 81;
+averageTemp[1][1] = 79;
+averageTemp[1][2] = 75;
+averageTemp[1][3] = 75;
+averageTemp[1][4] = 73;
+averageTemp[1][5] = 72;
+```
+
+<br />
+
+해당 코드를 표로 나타내 보면 아래와 같다.
+
+행은 날짜를, 열은 그날의 매 시간을 나타내며, 저장된 값은 측정된 온도다.
+
+|72|75|79|79|81|81|
+|81|79|75|75|73|73|
+
+<br />
+
+행렬의 내용을 확인해보고 싶을 때 쓸 수 있는 콘솔 출력함수를 함들어두면 나중에 편리하다.
+
+전체 행과 열을 순회하려고 for 루프를 중첩했다.
+
+여기서 i는 행, j는 열을 각각 가리킨다.
+
+```js
+function printMatrix(myMatrix) {
+  for (var i = 0; i < myMatrix.length; i++) {
+    for (var j = 0; j < myMatrix[i].length; j++) {
+      console.log(myMatrix[i][j]);
+    }
+  }
+}
+```
+
+<br />
+
+averageTemp 행렬의 내용을 직접 확인해보자.
+
+```js
+printMatrix(averageTemp);
+```
+
+<br />
+
+3차원 이상의 다차원 배열도 가능하다.
+
+예를 들어, 3 X 3 행렬을 만들어 각 셀에
+
+i(행) + j(열) + z(깊이) 값을 저장하는 코드를 작성해보자.
+
+```js
+var matrix3x3x3 = [];
+
+for (var i = 0; i < 3; i++) {
+  matrix3x3x3[i] = [];
+  for (var j = 0; j < 3; j++) {
+    matrix3x3x3[i][j] = [];
+    for (var z = 0; z < 3; z++) {
+      matrix3x3x3[i][j][z] = i + j + z;
+    }
+  }
+}
+  ```
+
+<br />
+
+3차원 행렬의 내용은 다음과 같이 확인할 수 있다.
+
+```js
+for (var i = 0; i < matrix3x3x3.length; i++) {
+  for (var j = 0; j < matrix3x3x3[i].length; j++) {
+    for (var z = 0; z < matrix3x3x3[i][j].length; z++) {
+      console.log(matrix3x3x3[i][j][z]);
+    }
+  }
+}
+```
+
 
 
 <br />
@@ -350,6 +480,7 @@ numbers.splice(5, 3);
 
 
 <br />
+
 
 
 
