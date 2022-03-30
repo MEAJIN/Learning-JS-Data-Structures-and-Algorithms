@@ -546,13 +546,31 @@ var numbers = negativeNumbers.concat(zero, positiveNumbers);
 
 2의 배수 여부를 체크하는 함수가 있다고 하자.
 
+```js
+var isEven = function (x) {
+  // x가 2의 배수이면 true를 반환한다.
+  console.log(x);
+  return (x % 2 == 0) ? true : false;
+};
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+```
+
 <br />
 
+이 부분을
 
+```js
+return (x % 2 == 0) ? true : false;
+```
 
 <br />
 
+아래와 같이 바꿔쓸 수 있다.
 
+```js
+return (x % 2 == 0);
+```
 
 <br />
 
