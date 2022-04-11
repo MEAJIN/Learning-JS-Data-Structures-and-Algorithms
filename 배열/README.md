@@ -574,11 +574,20 @@ return (x % 2 == 0);
 
 <br />
 
+먼저 every 메소드다.
 
+이 메소드는 함수의 결과 값이 false가 될 때까지 배열의 모든 원소를 반복한다.
+
+
+```js
+numbers.every(isEven);
+```
 
 <br />
 
+numbers 배열의 첫 원소는 1이고, 1은 2의 배수가 아니므로 isEven 함수는 false를 반환한다.
 
+따라서 isEven 함수는 딱 한번만 실행되고 그대로 프로그램은 종료된다.
 
 <br />
 
