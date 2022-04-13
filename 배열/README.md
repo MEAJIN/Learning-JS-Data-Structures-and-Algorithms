@@ -591,6 +591,13 @@ numbers 배열의 첫 원소는 1이고, 1은 2의 배수가 아니므로 isEven
 
 <br />
 
+다음은 some 메소드다. every 메소드와 비슷하지만,
+
+지정된 함수의 결과가 true일 때까지 배열의 각 원소를 반복한다.
+
+```js
+numbers.some(isEven);
+```
 
 <br />
 
