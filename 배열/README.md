@@ -611,7 +611,15 @@ numbers.some(isEven);
 
 <br />
 
+조건에 상관없이 배열의 모든 원소를 반복하려면 forEach 함수를 쓴다.
 
+내부에 함수 코드를 가지며 기능적으로는 for와 동일하다.
+
+```js
+numbers.forEach(function(x){
+  console.log((x % 2 == 0));
+})
+```
 
 <br />
 
