@@ -623,5 +623,8 @@ numbers.forEach(function(x){
 
 <br />
 
+자바스크립트에는 수행 결과를 새 배열 객체로 반환하는 메소드가 둘 있다.
+
+먼저 map 메소드다.
 
 <br />
