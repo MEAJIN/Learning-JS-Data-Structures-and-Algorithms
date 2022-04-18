@@ -628,3 +628,20 @@ numbers.forEach(function(x){
 먼저 map 메소드다.
 
 <br />
+
+```js
+var mymap = numbers.map(isEven);
+```
+
+<br />
+
+
+<br />
+
+
+
+<br />
+
+
+
+<br />
